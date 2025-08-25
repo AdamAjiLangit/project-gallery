@@ -26,21 +26,24 @@ document.addEventListener("DOMContentLoaded", () => {
     awardElement.className = "award";
 
     awardElement.innerHTML = `
-      <div class="award-wrapper">
-        <div class="award-name">
-          <h1>${award.name}</h1>
-          <h1>${award.type}</h1>
-        </div>
-        <div class="award-project">
-          <h1>${award.project}</h1>
-          <h1>${award.label}</h1>
-        </div>
-        <div class="award-name">
-          <h1>${award.name}</h1>
-          <h1>${award.type}</h1>
-        </div>
+  <a href="${award.url}" target="_blank" rel="noopener noreferrer" class="award-link">
+    <div class="award-wrapper">
+      <div class="award-name">
+        <h1>${award.name}</h1>
+        <h1>${award.type}</h1>
       </div>
-    `;
+      <div class="award-project">
+        <h1>${award.project}</h1>
+        <h1>${award.label}</h1>
+      </div>
+      <div class="award-name">
+        <h1>${award.name}</h1>
+        <h1>${award.type}</h1>
+      </div>
+    </div>
+  </a>
+`;
+
 
     awardsListContainer.appendChild(awardElement);
   });
@@ -188,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       const img = document.createElement("img");
-      img.src = `assets/img${index + 1}.jpg`;
+      img.src = `assets/img${index + 1}.png`;
       img.style.position = "absolute";
       img.style.top = 0;
       img.style.left = 0;
