@@ -545,4 +545,11 @@ export const awards = [
     label: "prel⋇ad",
     url: "https://reveal-landing-page.vercel.app/",
   },
+  {
+    name: "slide to choose navbar",
+    type: "navbar",
+    project: "Check it out",
+    label: "navb⋇r",
+    url: "https://slide-to-choose-navbar.vercel.app/",
+  },
 ];
